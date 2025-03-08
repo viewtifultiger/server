@@ -45,6 +45,12 @@ namespace Xiaolongshu2Model.Migrations
                         .HasColumnType("int")
                         .HasColumnName("population");
 
+                    b.Property<decimal>("lat")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("lon")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CountryId");
